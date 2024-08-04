@@ -1,0 +1,26 @@
+@import "../../assets/styles/theme_variables.scss";
+
+.customers-feedback {
+    padding: 1.5rem;
+    background-color: $wrapper-primary-color;
+    border-radius: 1.5rem;
+    height: 100%;
+
+    .customers-feedback-title {
+        color: $wrapper-lightest-white;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }    
+}
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 5rem;
+}
+

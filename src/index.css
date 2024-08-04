@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+@media screen and (max-width: 1223px) {
+  * {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 540px) {
+  * {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 440px) {
+  * {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../assets/styles/theme_variables.scss";
+
+.notification-icons {
+    display: flex;
+    .noti-icons {
+        color: $wrapper-lightest-white;
+        border: 1px solid $wrapper-lightest-white;
+        border-radius: 50%;
+        height: 3rem;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem;
+        cursor: pointer;
+
+        svg {
+            font-size: 2rem;
+        }
+    }
+}

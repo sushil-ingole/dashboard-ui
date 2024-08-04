@@ -1,0 +1,70 @@
+@import "../../assets/styles/theme_variables.scss";
+
+.sidebar {
+    background-color: $wrapper-primary-color;
+    height: 100vh;
+    width: max-content;
+    text-align: center;
+
+    .nav-icons-container {
+        display: flex;
+        flex-direction: column;
+        width: 8rem;
+        height: max-content;
+        justify-content: center;
+        align-items: center;
+
+        .main-icon {
+            margin: 2.5rem 0 2.5rem 0 !important;
+            svg {
+                font-size: 3.5rem !important;
+            }
+        }
+
+        .nav-icons {
+            margin: 10px 0;
+            cursor: pointer;
+
+            &.main-icon, &.active {
+                color: $wrapper-blue-highlight;
+            }
+
+            &.chart-icon, &.checkboard-icon, &.wallet-icon, &.shoppingbag-icon {
+                color: $wrapper-light-white;
+            }
+            
+            svg {
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1223px) {
+    .sidebar {
+        width: 100%;
+        height: max-content;
+        overflow-x: auto;
+        
+        .nav-icons-container {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            padding: 0 1rem;
+
+            
+            .nav-icons {
+                svg {
+                    font-size: 2rem !important;
+                }
+            }
+
+            .main-icon {
+                margin: 25px 0 25px 0 !important;
+                svg {
+                    font-size: 2.7rem !important;
+                }
+            }
+        }
+    }
+}

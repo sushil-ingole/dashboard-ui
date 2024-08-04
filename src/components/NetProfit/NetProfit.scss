@@ -1,0 +1,123 @@
+@import "../../assets/styles/theme_variables.scss";
+
+.net-profit {
+    color: $wrapper-lightest-white;
+    display: grid;   
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
+    height: 100%;
+    padding: 1.5rem;
+    background-color: $wrapper-primary-color;
+    border-radius: 1.5rem;
+
+    .net-profit-title {
+        font-size: 1.4rem;
+    }
+
+    .net-profit-value {
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    .net-profit-goal {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+
+        .goal-container {
+            position: absolute;
+            flex-direction: column;
+            margin-bottom: 3rem;
+            text-align: center;
+            z-index: 1;
+
+            .goal-percent {
+                font-size: 1.5rem;
+                font-family: "Oswald", sans-serif;
+                font-weight: 500;
+            }
+
+            .goal-text {
+                word-wrap: normal;
+                width: 6rem;
+            }
+        }
+
+        .net-profit-pie-chart {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            background: conic-gradient(rgb(113, 113, 255) var(--progress), rgb(95 95 255 / 50%) 0deg);
+            font-size: 0;
+          
+            &::after {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 80%;
+              height: 80%;
+              border-radius: 50%;
+              background: $wrapper-primary-color;
+              z-index: 1;
+            }
+          
+            &::before {
+              content: '';
+              position: absolute;
+              width: 1rem;
+              height: 1rem;
+              border-radius: 50%;
+              background-color: rgb(113, 113, 255);
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              z-index: 2;
+            }
+          
+            & > .start-cap {
+              content: '';
+              position: absolute;
+              width: 1rem;
+              height: 1rem;
+              border-radius: 50%;
+              background-color: rgb(113, 113, 255);
+              top: 46%;
+              left: 0%;
+              transform: translate(-50%, -50%) rotate(calc(-1 * var(--progress)));
+              transform-origin: 50% 100%;
+              z-index: 2;
+            }
+          }
+        
+
+        .net-profit-pie-chart-label {
+            padding-top: 0.5rem;
+        }
+    }
+    .net-profit-percent {
+        align-content: end;
+        color: #37a648;
+        font-size: 1.5rem;
+    }
+    .arrow {
+        position: relative;
+        bottom: 2px;
+
+        svg {
+            font-size: 2rem;
+        }
+    }
+}

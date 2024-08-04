@@ -1,0 +1,78 @@
+@import "../../../assets/styles/theme_variables.scss";
+
+.card-details {
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 1fr 0.5fr;
+    width: 23.5%;
+    aspect-ratio: 1;
+    background-color: $wrapper-primary-color;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+
+    .card-header {
+        padding: 0;
+        .icon {
+            font-size: 3rem;
+            border: 1px solid $wrapper-lightest-white;
+            border-radius: 1rem;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 1;
+            height: 4rem;
+            background-color: $wrapper-blue-highlight;
+
+            svg {
+                font-size: 2.5rem;
+                color: $wrapper-lightest-white;
+            }
+        }
+
+        .card-title {
+            position: relative;
+            top: 0.6rem;
+            color: $wrapper-lightest-white;
+            font-size: 1.3rem;
+        }
+    }
+
+    .card-total {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        align-content: end;
+        color: $wrapper-lightest-white;
+        font-size: 3rem;
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+    }
+    .card-percent {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        align-content: end;
+        justify-self: end;
+        color: #ea2d2d;
+        font-size: 1.5rem;
+
+        .arrow {
+            position: relative;
+            bottom: 2px;
+
+            svg {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .profit {
+        color: #37a648;
+    }
+}
+
+@media screen and (max-width: 1223px) {
+    .card-details {
+        flex: 1 1 calc(50% - 1rem);
+        margin: 0.5rem;
+    }
+}

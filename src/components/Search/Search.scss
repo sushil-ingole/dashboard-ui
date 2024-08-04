@@ -1,0 +1,40 @@
+@import "../../assets/styles/theme_variables.scss";
+
+.search-bar {
+    position: relative;
+    width: max-content;
+    height: max-content;
+
+    .search-input {
+        border: 1px solid gray;
+        background-color: #1C1C1E;
+        color: $wrapper-lightest-white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        width: 25rem;
+        margin: 2rem 0;
+        padding-left: 3rem;
+        outline: none;
+
+        &::placeholder {
+            position: relative;
+            color: $wrapper-lightest-white;
+        }
+    }
+    .search-icon {
+        position: absolute;
+        color: $wrapper-lightest-white;
+        left: 0.7rem;
+        top: 2.7rem;
+
+        svg {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1223px) {
+    .search-input {
+        width: 15rem !important;
+    }
+}

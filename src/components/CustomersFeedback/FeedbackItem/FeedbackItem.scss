@@ -1,0 +1,46 @@
+@import "../../../assets/styles/theme_variables.scss";
+
+.feedback-item {
+    color: $wrapper-lightest-white;
+    border-bottom: 1px solid gray;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    .user-profile {
+        display: flex;
+        align-items: center;
+
+        .user-name {
+            font-size: 1.5rem;
+        }
+    
+        img {
+            width: 2.5rem;
+            aspect-ratio: 1;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .user-rating {
+        svg {
+            color: $wrapper-lightest-white;
+            width: 2rem;
+            aspect-ratio: 1;
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+        .filled {
+            svg {
+                color: yellow;
+            }
+        }
+    }
+
+    .user-feedback {
+        color: gray;
+    }
+}
+
+.feedback-item:last-child {
+    border-bottom: none;
+}

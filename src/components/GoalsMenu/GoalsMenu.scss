@@ -1,0 +1,11 @@
+@import "../../assets/styles/theme_variables.scss";
+
+.goals-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: $wrapper-primary-color;
+    border-radius: 1.5rem;
+    height: 100%;
+}

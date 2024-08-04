@@ -1,0 +1,34 @@
+@import "../../assets/styles/theme_variables.scss";
+
+.dashboard {
+    height: calc(100vh - 8rem);
+    width: 100%;
+    padding: 2rem;
+
+    .dashboard-title {
+        color: $wrapper-lightest-white;
+        font-size: 2.5rem;
+    }
+
+    .dashboard-contaniner {
+        display: grid;
+        grid-template-rows: 0.5fr 1fr 3fr;
+        grid-template-columns: 2fr 1.2fr;
+        gap: 3rem;
+        height: calc(100% - 4rem);
+        padding: 2rem 0;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 1223px) {
+    .dashboard-contaniner {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(6, auto) !important;
+        height: auto !important;
+    }
+
+    .dashboard-cards {
+        width: 100%;
+    }
+}

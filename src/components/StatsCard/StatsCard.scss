@@ -1,0 +1,8 @@
+@import "../../assets/styles/theme_variables.scss";
+
+.stats-card {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: wrap;
+}

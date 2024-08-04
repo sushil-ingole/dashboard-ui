@@ -1,0 +1,54 @@
+@import "../../../assets/styles/theme_variables.scss";
+
+.goal-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .goal-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+
+        .goal-icon {
+            margin-right: 1rem;
+            border-radius: 100%;
+            background-color: $wrapper-blue-highlight;
+            border: 1px solid $wrapper-blue-highlight;
+            width: 5rem;
+            aspect-ratio: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+
+            svg {
+                font-size: 2.5rem;
+                color: $wrapper-lightest-white;
+            }
+        }
+        .goal-name {
+            font-size: 1.5rem;
+            color: $wrapper-lightest-white;
+        }
+
+    }
+    .goal-navigate {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+        border-radius: 100%;
+        background-color: rgba($color: rgb(209, 209, 209), $alpha: 0.4);
+        width: 2.5rem;
+        aspect-ratio: 1;
+
+        svg {
+            font-size: 2.5rem;
+            color: $wrapper-lightest-white;
+            position: relative;
+            left: 0.1rem;        
+        }
+    }
+}
