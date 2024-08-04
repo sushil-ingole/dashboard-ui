@@ -1,4 +1,3 @@
-import { CiStar } from "react-icons/ci";
 import "./FeedbackItem.scss";
 import { FaStar } from "react-icons/fa";
 
