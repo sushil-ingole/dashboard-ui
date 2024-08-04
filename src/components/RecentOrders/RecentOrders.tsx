@@ -5,7 +5,7 @@ interface IOrder {
   orderNo: string;
   amount: string;
   status: string;
-};
+}
 
 const orders: IOrder[] = [
   { customer: "Wade Warren", orderNo: "15478256", amount: "$124.00", status: "Delivered" },
