@@ -11,7 +11,7 @@ const FeedbackItem = ({username, rating, feedback}: IFeedback) => {
   return (
     <div className="feedback-item">
       <div className="user-profile">
-        <img src="src/assets/images/user.png" alt="User" />
+        <img src="/images/user.png" alt="User" />
         <span className="user-name">{username}</span>
       </div>
       <p className="user-rating">
