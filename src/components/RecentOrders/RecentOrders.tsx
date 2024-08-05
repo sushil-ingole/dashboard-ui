@@ -1,4 +1,5 @@
 import "./RecentOrders.scss";
+import profileImg from "/images/profile.png";
 
 interface IOrder {
   customer: string;
@@ -34,7 +35,7 @@ const RecentOrders = () => {
         {orders.map((order, index) => (
           <tr key={index}>
             <td>
-              <img src="/images/profile.png" alt="Profile" /> <span className="customer-name">{order.customer}</span>
+              <img src={profileImg} alt="Profile" /> <span className="customer-name">{order.customer}</span>
             </td>
             <td>{order.orderNo}</td>
             <td>{order.amount}</td>

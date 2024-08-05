@@ -1,5 +1,6 @@
 import "./FeedbackItem.scss";
 import { FaStar } from "react-icons/fa";
+import userImg from "/images/user.png";
 
 interface IFeedback {
     username: string;
@@ -11,7 +12,7 @@ const FeedbackItem = ({username, rating, feedback}: IFeedback) => {
   return (
     <div className="feedback-item">
       <div className="user-profile">
-        <img src="/images/user.png" alt="User" />
+        <img src={userImg} alt="User" />
         <span className="user-name">{username}</span>
       </div>
       <p className="user-rating">
